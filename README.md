@@ -17,7 +17,7 @@ git clone https://github.com/kiranparajuli589/Review-Reminder.git
 ```
 - change directory 
 ```sh
-cd Review-Reminder
+pushd Review-Reminder
 ```
 - Set your time 
 ```sh
