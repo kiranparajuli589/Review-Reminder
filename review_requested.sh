@@ -12,11 +12,11 @@ do
 		count=`cat output.json`
 		if [[ $count -gt 1 ]]
 		then
-				notify-send "Hurray! Review Time. You've ${count} review requests."
+				notify-send "Hurray! It's review time. You've ${count} review requests."
 				play attention-sound.mp3
 				google-chrome https://github.com/pulls/review-requested --new-window
 		else
-				notify-send "Cheers! No reviews requested"
+				notify-send "Cheers! You have 0 review request."
 		fi
 	fi
 done
