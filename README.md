@@ -13,6 +13,9 @@ sudo apt install libsox-fmt-mp3
 - cd Review-Reminder
 - vi review_requested.sh
 set your favorable time in REQUEST_TIME_ARRAY
+- Before running the script you've to set two variables:
+    - USERNAME i.e your github username
+    - GIT_ACCESS_TOKEN i.e your personal access token for GitHub on the commandline
 - run bash file using `nohup` as:
 ```sh
 nohup bash review_requested.sh &
