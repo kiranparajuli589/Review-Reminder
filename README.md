@@ -1,7 +1,7 @@
 ### Review-Reminder
 ### Features
-Set time and
-- get review_request reminder alert sound + notification
+- count your review requests and notify accordingly
+- get reminder alert sound + notification
 - opens review-request page in chrome
 
 ### Dependencies Required
@@ -19,14 +19,14 @@ git clone https://github.com/kiranparajuli589/Review-Reminder.git
 ```sh
 pushd Review-Reminder
 ```
-- Set your time 
+- before running the script you've to set two variables:
+    - `USERNAME` i.e your github username
+    - `GIT_ACCESS_TOKEN` i.e your personal access token for GitHub on the commandline
+- set your favorable timestamp
 ```sh
 vi review_requested.sh
 ```
-set your favorable time in REQUEST_TIME_ARRAY
-- Before running the script you've to set two variables:
-    - USERNAME i.e your github username
-    - GIT_ACCESS_TOKEN i.e your personal access token for GitHub on the commandline
+now set your favorable time in `REQUEST_TIME_ARRAY`
 - run bash file using `nohup` as:
 ```sh
 nohup bash review_requested.sh &
